@@ -8,3 +8,7 @@ Guess button disabled color: #D0D2D3
 Guess button hover color: #EB008B
 Last guess text color: #404041
 Last guess number color: #EB008B*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
