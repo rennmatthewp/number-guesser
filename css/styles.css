@@ -11,12 +11,12 @@ Last guess number color: #EB008B*/
 
 body {
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 header {
   background: #404041;
   height: 20vh;
-  text-align: center;
   width: 100%;
 }
 
