@@ -25,11 +25,22 @@ h1 {
   font-weight: 300;
   font-size: 64px;
   letter-spacing: .05em;
-  padding: 32px;
+  padding: 50px;
 }
 
 h1 span {
   color: #ED458B;
   font-weight: 700;
   margin: 0 1%;
+}
+
+fieldset {
+  text-align: center;
+}
+
+#user-guess {
+  height: 45px;
+  width: 40%;
+  margin: 5% 30% 4%;
+  font-size: 24px;
 }
