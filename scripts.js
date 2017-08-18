@@ -1,13 +1,14 @@
 var randomNumber = randomNumber(0, 100);
 console.log(randomNumber);
+
 //Event Listeners
 
 document.querySelector('#submit-button').addEventListener('click', function(e) {
   e.preventDefault();
   var userGuess = document.getElementById('user-guess').value;
-  document.getElementById('user-guess').value = ''
+  document.getElementById('user-guess').value = '';
   document.getElementById('last-guess').innerHTML = userGuess;
-  checkGuess(userGuess)
+  checkGuess(userGuess)   
 });
 
 //Functions
@@ -27,4 +28,4 @@ function checkGuess(guess) {
     guessFeedback = 'That is too high'
   };
   return guessFeedback = 'BOOM!'
-},
+};
