@@ -11,6 +11,11 @@ document.querySelector('#submit-button').addEventListener('click', function(e) {
   checkGuess(userGuess)
 });
 
+document.querySelector('#clear-button').addEventListener('click', function(e){
+  e.preventDefault();
+  document.getElementById('user-guess').value = '';
+})
+
 //Functions
 
 function randomNumber(min, max) {
