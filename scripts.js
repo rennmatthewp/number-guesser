@@ -2,6 +2,7 @@ var min = 0;
 var max = 100;
 var randomNumber = randomNumber(min, max);
 console.log(randomNumber);
+guessRange();
 
 //Event Listeners
 
@@ -38,7 +39,25 @@ document.querySelector('#clear-button').addEventListener('click', function(e){
   document.getElementById('user-guess').value = '';
 });
 
+document.querySelector('#minimum').addEventListener('keyup', validateGuessRange);
+document.querySelector('#maximum').addEventListener('keyup', validateGuessRange);
+
 //Functions
+
+function guessRange() {
+  document.getElementById('minimum').value = min;
+  document.getElementById('maximum').value = max;
+};
+
+function validateGuessRange () {
+  var newMin = parseInt(document.getElementById('minimum').value);
+  var newMax = parseInt(document.getElementById('maximum').value);
+  if (isNaN(newMin) || isNaN(newMax)) {
+    document.querySelector('#save').disabled = true;
+  }
+  else {
+    document.querySelector('#save').disabled = false;
+}};
 
 function randomNumber(min, max) {
   min = Math.ceil(min);
