@@ -8,7 +8,7 @@ document.querySelector('#submit-button').addEventListener('click', function(e) {
   var userGuess = document.getElementById('user-guess').value;
   document.getElementById('user-guess').value = '';
   document.getElementById('last-guess').innerHTML = userGuess;
-  checkGuess(userGuess)   
+  checkGuess(userGuess)
 });
 
 //Functions
@@ -17,15 +17,15 @@ function randomNumber(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() *  (max - min + 1)) + min;
-}
+};
 
 function checkGuess(guess) {
-  var feedback = document.getElementById('guess-feedback').innerHTML
+  var feedback = document.getElementById('guess-feedback');
   if (guess < randomNumber){
-    guessFeedback = 'That is too low'
-  };
-  if (guess > randomNumber){
-    guessFeedback = 'That is too high'
-  };
-  return guessFeedback = 'BOOM!'
+    feedback.innerText = 'That is too low'
+  }
+  else if (guess > randomNumber){
+    feedback.innerText = 'That is too high'
+  }
+  else feedback.innerText = 'BOOM!'
 };
