@@ -14,21 +14,23 @@
     </header>
 
     <main>
-        <form class="guess-input" action="index.html" method="post">
-          <fieldset>
-            <input id="user-guess" type="number" name="user-guess" value="" placeholder="Enter your guess">
-            <button id="submit-button" type="submit" name="button">Guess</button>
-            <button id="clear-button" type="clear-button" name="button">Clear</button>
-          </fieldset>
-        </form>
+      <form class="guess-input" action="index.html" method="post">
+        <fieldset>
+          <input id="user-guess" type="number" name="user-guess" value="" placeholder="Enter your guess">
+          <button id="submit-button" type="submit" name="button">Guess</button>
+          <button id="clear-button" type="clear-button" name="button">Clear</button>
+        </fieldset>
+      </form>
 
-        <article class="display-guess">
-          <p>Your last guess was</p>
-          <p id="last-guess">25</p>
-          <p id="guess-feedback">Too low looooser</p>
-        </article>
+      <article class="display-guess">
+        <p>Your last guess was</p>
+        <p id="last-guess">#</p>
+        <p id="guess-feedback"></p>
+      </article>
 
-      <button id="reset-button">Reset</button>
+      <form class="reset">
+        <button id="reset-button">Reset</button>
+      </form>
       <script type="text/javascript" src="scripts.js"></script>
     </main>
   </body>
