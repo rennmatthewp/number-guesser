@@ -16,14 +16,14 @@
     <main>
       <form class="guess-input" action="index.html" method="post">
         <fieldset>
-          <input id="user-guess" type="number" name="user-guess" value="" placeholder="Enter your guess">
-          <button id="submit-button" type="submit" name="button">Guess</button>
+          <input id="user-guess" type="text" name="user-guess" value="" placeholder="Enter your guess">
+          <button id="submit-button" type="submit" name="button" disabled>Guess</button>
           <button id="clear-button" type="clear-button" name="button">Clear</button>
         </fieldset>
       </form>
 
       <article class="display-guess">
-        <p>Your last guess was</p>
+        <p id="guess-prompt"></p>
         <p id="last-guess">#</p>
         <p id="guess-feedback"></p>
       </article>
