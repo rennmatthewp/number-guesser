@@ -49,9 +49,21 @@ fieldset {
 button {
   width: 45%;
   height: 45px;
-  background-color: #D0D2D3;
+  background-color: #929497;
   border-radius: 5em;
   color: #FFFFFF;
+}
+
+button:disabled {
+  background-color: #D0D2D3;
+}
+
+button:hover {
+  background-color: #EB008B;
+}
+
+button:focus {
+  outline: none;
 }
 
 #submit-button {
@@ -78,7 +90,5 @@ p {
 #reset-button {
   width: 50%;
   height: 45px;
-  background-color: #D0D2D3;
-  color: #FFFFFF;
   margin-top: 5vh;
 }
