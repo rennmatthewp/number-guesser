@@ -36,7 +36,6 @@ document.querySelector('#submit-button').addEventListener('click', function(e) {
   document.getElementById('user-guess').value = '';
   document.querySelector('#submit-button').disabled = true;
   document.querySelector('#clear-button').disabled = true;
-
 });
 
 document.querySelector('#clear-button').addEventListener('click', function(e){
@@ -64,3 +63,6 @@ function checkGuess(guess) {
   }
   else feedback.innerText = 'BOOM!'
 };
+
+//parse int to use min max comparrison
+//use strict equals for comparrison fucntion
