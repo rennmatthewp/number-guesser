@@ -39,13 +39,6 @@ fieldset {
   margin: 5vh 25% 6vh;
 }
 
-#user-guess {
-  height: 45px;
-  width: 100%;
-  margin: 0 0 5vh;
-  font-size: 24px;
-}
-
 button {
   width: 45%;
   height: 45px;
@@ -66,6 +59,18 @@ button:focus {
   outline: none;
 }
 
+p {
+  font-size: 24px;
+  color: #404041;
+}
+
+#user-guess {
+  height: 45px;
+  width: 100%;
+  margin: 0 0 5vh;
+  font-size: 24px;
+}
+
 #submit-button {
   float: left;
   margin: 0 5% 0 0;
@@ -74,11 +79,6 @@ button:focus {
 #clear-button {
   float: right;
   margin: 0 0 0 5%;
-}
-
-p {
-  font-size: 24px;
-  color: #404041;
 }
 
 #last-guess {
